@@ -5,6 +5,8 @@ import android.util.Log;
 import com.ilkayaktas.daggerapplication.model.Car;
 import com.ilkayaktas.daggerapplication.model.Engine;
 
+import javax.inject.Inject;
+
 /**
  * Created by iaktas on 09.02.2017.
  */
@@ -13,6 +15,7 @@ public class TeslaCar implements Car{
 
     private Engine engine;
 
+    @Inject
     public TeslaCar(Engine engine) {
         this.engine = engine;
     }
