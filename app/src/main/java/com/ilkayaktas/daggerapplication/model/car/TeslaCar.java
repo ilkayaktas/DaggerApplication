@@ -13,7 +13,7 @@ import javax.inject.Inject;
 
 public class TeslaCar implements Car{
 
-    private Engine engine;
+    Engine engine;
 
     @Inject
     public TeslaCar(Engine engine) {
